@@ -448,7 +448,7 @@ export default function ContactPage() {
             </div>
 
             <div className="space-y-4">
-              <h3 className="font-semibold text-lg">Productos</h3>
+              {/* <h3 className="font-semibold text-lg">Productos</h3>
               <div className="space-y-2 text-gray-400">
                 <Link href="#" className="block hover:text-pink-400 transition-colors">
                   Stilettos
@@ -462,11 +462,11 @@ export default function ContactPage() {
                 <Link href="#" className="block hover:text-pink-400 transition-colors">
                   Sandalias
                 </Link>
-              </div>
+              </div> */}
             </div>
 
             <div className="space-y-4">
-              <h3 className="font-semibold text-lg">Ayuda</h3>
+              {/* <h3 className="font-semibold text-lg">Ayuda</h3>
               <div className="space-y-2 text-gray-400">
                 <Link href="#" className="block hover:text-pink-400 transition-colors">
                   Guía de Talles
@@ -480,7 +480,7 @@ export default function ContactPage() {
                 <Link href="#" className="block hover:text-pink-400 transition-colors">
                   FAQ
                 </Link>
-              </div>
+              </div> */}
             </div>
 
             <div className="space-y-4">

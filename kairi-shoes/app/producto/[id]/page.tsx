@@ -170,7 +170,7 @@ export default function ProductPage() {
               <h1 className="text-3xl font-bold text-gray-900 mb-2">{product.name}</h1>
 
               <div className="flex items-center space-x-4 mb-4">
-                <div className="flex items-center space-x-1">
+                {/* <div className="flex items-center space-x-1">
                   {[...Array(5)].map((_, i) => (
                     <Star
                       key={i}
@@ -178,7 +178,7 @@ export default function ProductPage() {
                     />
                   ))}
                   <span className="text-sm text-gray-600 ml-2">({product.reviews} reseñas)</span>
-                </div>
+                </div> */}
               </div>
 
               <div className="flex items-center space-x-4 mb-6">

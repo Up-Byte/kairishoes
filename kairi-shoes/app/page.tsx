@@ -78,13 +78,13 @@ export default function KairiShoesLanding() {
                 >
                   Ver Colección
                 </Button>
-                <Button
+                {/* <Button
                   variant="outline"
                   size="lg"
                   className="border-pink-300 text-pink-600 hover:bg-pink-50 px-8 py-3 text-lg bg-transparent"
                 >
                   Conocé más
-                </Button>
+                </Button> */}
               </div>
 
               <div className="flex items-center space-x-8 pt-4">
@@ -187,13 +187,15 @@ export default function KairiShoesLanding() {
               >
                 <CardContent className="p-0">
                   <div className="relative overflow-hidden rounded-t-lg">
-                    <Image
-                      src={`/placeholder.svg?height=300&width=300`}
-                      alt={product.name}
-                      width={300}
-                      height={300}
-                      className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
-                    />
+                    <Link href={`/producto/${index}`}>
+                      <Image
+                        src={`/placeholder.svg?height=300&width=300`}
+                        alt={product.name}
+                        width={300}
+                        height={300}
+                        className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                      />
+                    </Link>
                     <Badge className="absolute top-4 left-4 bg-pink-500 hover:bg-pink-600">{product.category}</Badge>
                     {product.originalPrice && (
                       <Badge className="absolute top-4 right-4 bg-red-500 hover:bg-red-600">¡Oferta!</Badge>
@@ -216,12 +218,12 @@ export default function KairiShoesLanding() {
                             <span className="text-sm text-gray-500 line-through">{product.originalPrice}</span>
                           )}
                         </div>
-                        <div className="flex items-center space-x-1">
+                        {/* <div className="flex items-center space-x-1">
                           {[...Array(5)].map((_, i) => (
                             <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
                           ))}
                           <span className="text-sm text-gray-600 ml-2">(24)</span>
-                        </div>
+                        </div> */}
                       </div>
                       <Button className="bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700">
                         Comprar
@@ -351,7 +353,7 @@ export default function KairiShoesLanding() {
             </div>
 
             <div className="space-y-4">
-              <h3 className="font-semibold text-lg">Productos</h3>
+              {/* <h3 className="font-semibold text-lg">Productos</h3>
               <div className="space-y-2 text-gray-400">
                 <Link href="#" className="block hover:text-pink-400 transition-colors">
                   Stilettos
@@ -365,11 +367,11 @@ export default function KairiShoesLanding() {
                 <Link href="#" className="block hover:text-pink-400 transition-colors">
                   Sandalias
                 </Link>
-              </div>
+              </div> */}
             </div>
 
             <div className="space-y-4">
-              <h3 className="font-semibold text-lg">Ayuda</h3>
+              {/* <h3 className="font-semibold text-lg">Ayuda</h3>
               <div className="space-y-2 text-gray-400">
                 <Link href="#" className="block hover:text-pink-400 transition-colors">
                   Guía de Talles
@@ -383,7 +385,7 @@ export default function KairiShoesLanding() {
                 <Link href="#" className="block hover:text-pink-400 transition-colors">
                   FAQ
                 </Link>
-              </div>
+              </div> */}
             </div>
 
             <div className="space-y-4">
