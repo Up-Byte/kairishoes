@@ -187,15 +187,13 @@ export default function KairiShoesLanding() {
               >
                 <CardContent className="p-0">
                   <div className="relative overflow-hidden rounded-t-lg">
-                    <Link href={`/producto/${index}`}>
-                      <Image
+                    <Image
                       src={`/placeholder.svg?height=300&width=300`}
                       alt={product.name}
                       width={300}
                       height={300}
-                      className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300 cursor-pointer"
-                      />
-                    </Link>
+                      className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
                     <Badge className="absolute top-4 left-4 bg-pink-500 hover:bg-pink-600">{product.category}</Badge>
                     {product.originalPrice && (
                       <Badge className="absolute top-4 right-4 bg-red-500 hover:bg-red-600">¡Oferta!</Badge>
