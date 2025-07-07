@@ -29,10 +29,10 @@ export default function KairiShoesLanding() {
               <Link href="#productos" className="text-gray-700 hover:text-pink-600 transition-colors font-medium">
                 Productos
               </Link>
-              <Link href="#nosotros" className="text-gray-700 hover:text-pink-600 transition-colors font-medium">
+              <Link href="/nosotros" className="text-gray-700 hover:text-pink-600 transition-colors font-medium">
                 Nosotros
               </Link>
-              <Link href="#contacto" className="text-gray-700 hover:text-pink-600 transition-colors font-medium">
+              <Link href="/contacto" className="text-gray-700 hover:text-pink-600 transition-colors font-medium">
                 Contacto
               </Link>
             </nav>
@@ -303,7 +303,7 @@ export default function KairiShoesLanding() {
       </section>
 
       {/* Newsletter */}
-      <section className="py-16 bg-gradient-to-r from-pink-500 to-purple-600">
+      {/* <section className="py-16 bg-gradient-to-r from-pink-500 to-purple-600">
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-2xl mx-auto space-y-6">
             <h2 className="text-3xl md:text-4xl font-bold text-white">¡No te pierdas nada!</h2>
@@ -321,7 +321,7 @@ export default function KairiShoesLanding() {
             <p className="text-sm text-pink-200">🎁 ¡Recibí un 15% de descuento en tu primera compra!</p>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-12">

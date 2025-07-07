@@ -1,6 +1,7 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
+import { Menu } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import {
@@ -77,23 +78,41 @@ export default function AboutPage() {
       <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-pink-100">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <Link href="/" className="flex items-center space-x-2">
-              <ArrowLeft className="h-5 w-5 text-gray-600" />
-              <span className="text-gray-600 hover:text-pink-600">Volver</span>
-            </Link>
-
-            <Link href="/" className="flex items-center space-x-2">
+            <div className="flex items-center space-x-2">
               <div className="w-8 h-8 bg-gradient-to-r from-pink-500 to-purple-600 rounded-full flex items-center justify-center">
                 <span className="text-white font-bold text-sm">K</span>
               </div>
               <span className="text-2xl font-bold bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent">
                 Kairi Shoes
               </span>
-            </Link>
+            </div>
 
-            <Button variant="ghost" size="icon">
-              <ShoppingBag className="h-5 w-5" />
-            </Button>
+            <nav className="hidden md:flex items-center space-x-8">
+              <Link href="/" className="text-gray-700 hover:text-pink-600 transition-colors font-medium">
+                Inicio
+              </Link>
+              <Link href="/#productos" className="text-gray-700 hover:text-pink-600 transition-colors font-medium">
+                Productos
+              </Link>
+              <Link href="/nosotros" className="text-gray-700 hover:text-pink-600 transition-colors font-medium">
+                Nosotros
+              </Link>
+              <Link href="/contacto" className="text-gray-700 hover:text-pink-600 transition-colors font-medium">
+                Contacto
+              </Link>
+            </nav>
+
+            <div className="flex items-center space-x-4">
+              <Button variant="ghost" size="icon" className="hidden md:flex">
+                <Heart className="h-5 w-5" />
+              </Button>
+              <Button variant="ghost" size="icon">
+                <ShoppingBag className="h-5 w-5" />
+              </Button>
+              <Button variant="ghost" size="icon" className="md:hidden">
+                <Menu className="h-5 w-5" />
+              </Button>
+            </div>
           </div>
         </div>
       </header>
@@ -190,7 +209,7 @@ export default function AboutPage() {
       </section>
 
       {/* Logros */}
-      <section className="py-16 bg-white">
+      {/* <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center space-y-4 mb-12">
             <h2 className="text-3xl md:text-4xl font-bold">Nuestros Logros</h2>
@@ -208,7 +227,7 @@ export default function AboutPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Nuestro Equipo */}
       <section className="py-16 bg-gradient-to-br from-pink-50 to-purple-50">
@@ -254,7 +273,7 @@ export default function AboutPage() {
       </section>
 
       {/* Misión y Visión */}
-      <section className="py-16 bg-white">
+      {/* <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12">
             <Card className="border-0 shadow-lg bg-gradient-to-br from-pink-50 to-pink-100">
@@ -284,10 +303,10 @@ export default function AboutPage() {
             </Card>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Final */}
-      <section className="py-16 bg-gradient-to-r from-pink-500 to-purple-600">
+      {/* <section className="py-16 bg-gradient-to-r from-pink-500 to-purple-600">
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-2xl mx-auto space-y-6">
             <h2 className="text-3xl md:text-4xl font-bold text-white">¿Lista para ser parte de Kairi?</h2>
@@ -302,28 +321,84 @@ export default function AboutPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Footer simplificado */}
-      <footer className="bg-gray-900 text-white py-8">
-        <div className="container mx-auto px-4 text-center">
-          <div className="flex items-center justify-center space-x-2 mb-4">
-            <div className="w-8 h-8 bg-gradient-to-r from-pink-500 to-purple-600 rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-sm">K</span>
+      <footer className="bg-gray-900 text-white py-12">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-4 gap-8">
+            <div className="space-y-4">
+              <div className="flex items-center space-x-2">
+                <div className="w-8 h-8 bg-gradient-to-r from-pink-500 to-purple-600 rounded-full flex items-center justify-center">
+                  <span className="text-white font-bold text-sm">K</span>
+                </div>
+                <span className="text-xl font-bold">Kairi Shoes</span>
+              </div>
+              <p className="text-gray-400">
+                Pisá fuerte con estilo. Los mejores zapatos para mujeres que no pasan desapercibidas.
+              </p>
+              <div className="flex space-x-4">
+                <Button variant="ghost" size="icon" className="text-gray-400 hover:text-pink-400">
+                  <Instagram className="h-5 w-5" />
+                </Button>
+                <Button variant="ghost" size="icon" className="text-gray-400 hover:text-pink-400">
+                  <Facebook className="h-5 w-5" />
+                </Button>
+                <Button variant="ghost" size="icon" className="text-gray-400 hover:text-pink-400">
+                  <Twitter className="h-5 w-5" />
+                </Button>
+              </div>
             </div>
-            <span className="text-xl font-bold">Kairi Shoes</span>
+
+            <div className="space-y-4">
+              <h3 className="font-semibold text-lg">Productos</h3>
+              <div className="space-y-2 text-gray-400">
+                <Link href="#" className="block hover:text-pink-400 transition-colors">
+                  Stilettos
+                </Link>
+                <Link href="#" className="block hover:text-pink-400 transition-colors">
+                  Sneakers
+                </Link>
+                <Link href="#" className="block hover:text-pink-400 transition-colors">
+                  Botas
+                </Link>
+                <Link href="#" className="block hover:text-pink-400 transition-colors">
+                  Sandalias
+                </Link>
+              </div>
+            </div>
+
+            <div className="space-y-4">
+              <h3 className="font-semibold text-lg">Ayuda</h3>
+              <div className="space-y-2 text-gray-400">
+                <Link href="#" className="block hover:text-pink-400 transition-colors">
+                  Guía de Talles
+                </Link>
+                <Link href="#" className="block hover:text-pink-400 transition-colors">
+                  Cambios y Devoluciones
+                </Link>
+                <Link href="#" className="block hover:text-pink-400 transition-colors">
+                  Envíos
+                </Link>
+                <Link href="#" className="block hover:text-pink-400 transition-colors">
+                  FAQ
+                </Link>
+              </div>
+            </div>
+
+            <div className="space-y-4">
+              <h3 className="font-semibold text-lg">Contacto</h3>
+              <div className="space-y-2 text-gray-400">
+                <p>📍 Buenos Aires, Argentina</p>
+                <p>📞 +54 11 1234-5678</p>
+                <p>✉️ hola@kairishoes.com.ar</p>
+                <p>🕒 Lun-Vie 9:00-18:00</p>
+              </div>
+            </div>
           </div>
-          <p className="text-gray-400 mb-4">Pisá fuerte con estilo único</p>
-          <div className="flex justify-center space-x-4">
-            <Button variant="ghost" size="icon" className="text-gray-400 hover:text-pink-400">
-              <Instagram className="h-5 w-5" />
-            </Button>
-            <Button variant="ghost" size="icon" className="text-gray-400 hover:text-pink-400">
-              <Facebook className="h-5 w-5" />
-            </Button>
-            <Button variant="ghost" size="icon" className="text-gray-400 hover:text-pink-400">
-              <Twitter className="h-5 w-5" />
-            </Button>
+
+          <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+            <p>&copy; 2024 Kairi Shoes. Todos los derechos reservados. Hecho con ❤️ en Argentina.</p>
           </div>
         </div>
       </footer>
